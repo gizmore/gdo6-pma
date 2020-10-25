@@ -4,11 +4,15 @@ namespace GDO\PhpMyAdmin\Method;
 use GDO\Core\Method;
 use GDO\PhpMyAdmin\Module_PhpMyAdmin;
 use GDO\Core\GDT_Response;
-use GDO\UI\GDT_Paragraph;
 use GDO\UI\GDT_Link;
 use GDO\UI\GDT_Panel;
 use GDO\UI\GDT_Bar;
 
+/**
+ * Switch to PMA application.
+ * @author gizmore
+ * @since 6.10
+ */
 final class Bridge extends Method
 {
 	public function getPermission() { return 'admin'; }
