@@ -2,6 +2,7 @@
 namespace GDO\PhpMyAdmin;
 
 use GDO\Core\GDO_Module;
+use GDO\Core\GDT_Array;
 use GDO\DB\GDT_Checkbox;
 use GDO\User\GDO_User;
 use GDO\UI\GDT_Link;
@@ -51,4 +52,9 @@ final class Module_PhpMyAdmin extends GDO_Module
 		}
 	}
 
+	public function hookIgnoreDocsFiles(GDT_Array $ignore)
+	{
+	    $ignore->data[] = 'GDO/PhpMyAdmin/phpmyadmin/**/*';
+	}
+	
 }
